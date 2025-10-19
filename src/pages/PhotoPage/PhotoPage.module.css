@@ -27,7 +27,7 @@
     /* --- Hiệu ứng Scroll Snapping --- */
     scroll-snap-type: x mandatory; /* Bật snap theo trục x, bắt buộc phải snap */
     scroll-behavior: smooth; /* Cuộn mượt mà */
-
+    align-items: center; /* Căn giữa các item theo chiều dọc */
     /* Tùy chỉnh thanh cuộn cho đẹp hơn */
     scrollbar-width: thin; /* Cho Firefox */
     scrollbar-color: var(--accent-pink) transparent;
@@ -44,21 +44,138 @@
     background-color: var(--accent-pink);
     border-radius: 10px;
 }
-.quizLink {
-    position: absolute; /* Đặt nút ở một vị trí cố định trên trang */
-    bottom: 30px;
-    right: 30px;
-    padding: 0.8rem 1.5rem;
+
+
+
+
+/*.quizCardLink h3 {*/
+/*    font-size: 2.5rem;*/
+/*    margin: 0 0 1rem 0;*/
+/*}*/
+
+/*.quizCardLink p {*/
+/*    font-size: 1.1rem;*/
+/*    line-height: 1.5;*/
+/*}*/
+
+/*.quizLink:hover {*/
+/*    transform: scale(1.05);*/
+/*}*/
+/*.arrowIcon {*/
+/*    font-size: 4rem; !* Kích thước lớn hơn *!*/
+/*    margin-top: 1rem;*/
+/*    color: white;*/
+/*    transition: transform 0.3s ease-in-out; !* Hiệu ứng chuyển động *!*/
+/*}*/
+
+/*!* Khi di chuột vào thẻ, mũi tên sẽ di chuyển nhẹ sang phải *!*/
+/*.quizCardLink:hover .arrowIcon {*/
+/*    transform: translateX(10px);*/
+/*}*/
+/*.quizCardLink {*/
+/*    !* --- Thuộc tính cuộn và căn chỉnh --- *!*/
+/*    flex-shrink: 0;*/
+/*    scroll-snap-align: center;*/
+
+/*    !* --- Mới: Dùng flexbox để căn giữa nội dung bên trong --- *!*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center; !* Đảm bảo text căn giữa nếu có nhiều dòng *!*/
+
+/*    !* --- Kích thước và màu sắc --- *!*/
+/*    width: 380px; !* Chiều rộng tổng thể của mũi tên *!*/
+/*    height: 200px; !* Chiều cao tổng thể của mũi tên *!*/
+/*    background-color: var(--accent-red);*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); !* Đổ bóng nhẹ *!*/
+
+/*    !* --- QUAN TRỌNG: TẠO HÌNH DẠNG MŨI TÊN BẰNG clip-path --- *!*/
+/*    !* Các điểm tạo hình mũi tên:*/
+/*       0% 0%         -> góc trên trái*/
+/*       100% 0%        -> góc trên phải*/
+/*       100% 50%       -> giữa cạnh phải (đỉnh mũi tên)*/
+/*       100% 100%      -> góc dưới phải*/
+/*       0% 100%        -> góc dưới trái*/
+/*       20% 50%        -> một điểm vào sâu hơn ở giữa cạnh trái*/
+/*    *!*/
+/*    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 20% 50%);*/
+
+/*    !* Căn chỉnh lại padding để text không bị cắt *!*/
+/*    padding-left: 3rem; !* Đẩy chữ vào trong một chút *!*/
+/*    padding-right: 1rem; !* Đảm bảo có khoảng trống bên phải *!*/
+/*}*/
+
+/*.quizCardLink:hover {*/
+/*    transform: translateY(-5px) scale(1.02); !* Hiệu ứng nhấc và phóng to nhẹ *!*/
+/*    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);*/
+/*}*/
+
+/*.quizCardLink span {*/
+/*    font-size: 1.5rem; !* Kích thước chữ phù hợp với hình dạng *!*/
+/*    font-weight: bold;*/
+/*    !* Đảm bảo chữ không bị tràn *!*/
+/*    white-space: nowrap; !* Giữ chữ trên một dòng *!*/
+/*    overflow: hidden;    !* Ẩn nếu quá dài *!*/
+/*    text-overflow: ellipsis; !* Thêm dấu ... nếu bị ẩn *!*/
+/*}*/
+.quizArrowBanner {
+    /* --- Thuộc tính cuộn và căn chỉnh --- */
+    flex-shrink: 0;
+    scroll-snap-align: center;
+
+    /* --- Dùng flexbox để căn giữa nội dung bên trong --- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* --- Kích thước và màu sắc --- */
+    width: 500px;  /* Chiều rộng của banner */
+    height: 150px; /* Chiều cao của banner */
     background-color: var(--accent-red);
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ */
+
+    /* --- QUAN TRỌNG: TẠO HÌNH DẠNG MŨI TÊN BẰNG clip-path --- */
+    /* Các điểm tạo hình mũi tên từ trái sang phải:
+       0% 0%         -> góc trên trái
+       100% 0%        -> góc trên phải
+       100% 100%      -> góc dưới phải
+       0% 100%        -> góc dưới trái
+       15% 50%        -> một điểm vào sâu hơn ở giữa cạnh trái
+    */
+    clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+    /* Căn chỉnh lại padding để text không bị cắt ở phần vát */
+    padding-left: 1rem; /* Bỏ bớt padding trái */
+    padding-right: 2.5rem; /* Tăng padding phải để chữ không chạm đỉnh mũi tên */
 }
 
-.quizLink:hover {
-    transform: scale(1.05);
+.quizArrowBanner:hover {
+    transform: scale(1.03); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.quizArrowBanner span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    /* Đảm bảo chữ không bị tràn */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .quizArrowBanner {
+        width: 300px;
+        height: 120px;
+        padding-left: 1.5rem;
+    }
+    .quizArrowBanner span {
+        font-size: 1.2rem;
+    }
 }
