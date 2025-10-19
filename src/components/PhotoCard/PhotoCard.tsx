@@ -19,6 +19,7 @@ const PhotoCard = ({ imageUrl, title, description }: PhotoCardProps) => {
                 <h2 className={styles.title}>{title}</h2>
                 <p className={styles.description}>{description}</p>
             </div>
+
         </div>
     );
 };

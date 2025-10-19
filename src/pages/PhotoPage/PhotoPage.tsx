@@ -4,6 +4,12 @@ import PhotoCard from '../../components/PhotoCard/PhotoCard';
 import idolPhoto1 from '../../assets/Screenshot 2025-10-19 at 17.18.29.png';
 import idolPhoto2 from '../../assets/Screenshot 2025-10-19 at 17.17.00.png';
 import TransitionLink from "../../components/TransitionLink/TransitionLink.tsx";
+import idolPhoto3 from '../../assets/Screenshot 2025-10-19 at 21.14.03.png';
+import idolPhoto4 from '../../assets/Screenshot 2025-10-19 at 21.13.22.png';
+import idolPhoto5 from '../../assets/Screenshot 2025-10-19 at 21.10.46.png';
+import idolPhoto6 from '../../assets/Screenshot 2025-10-19 at 21.05.38.png';
+
+
 const PhotoPage = () => {
 
     return (
@@ -20,6 +26,28 @@ const PhotoPage = () => {
                     title="Khoảnh khắc 02"
                     description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
                 />
+                <PhotoCard
+                    imageUrl={idolPhoto3}
+                    title="Khoảnh khắc 02"
+                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                />
+                <PhotoCard
+                    imageUrl={idolPhoto4}
+                    title="Khoảnh khắc 02"
+                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                />
+                <PhotoCard
+                    imageUrl={idolPhoto5}
+                    title="Khoảnh khắc 02"
+                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                />
+                <PhotoCard
+                    imageUrl={idolPhoto6}
+                    title="Khoảnh khắc 02"
+                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                />
+
+
                 {/* Bạn có thể thêm nhiều PhotoCard hơn nữa vào đây */}
                 <TransitionLink to="/quiz" className={styles.quizArrowBanner}>
                     <span>Thử thách kiến thức?</span>
