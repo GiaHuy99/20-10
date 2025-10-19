@@ -1,0 +1,24 @@
+/* --- BIẾN MÀU THEO PHONG CÁCH NGỌT NGÀO & HIỆN ĐẠI --- */
+:root {
+  --bg-color: #FFFFFF;
+  --secondary-bg-color: #FFF0F5; /* Lavender Blush */
+  --text-color: #333333;
+  --accent-red: #E74C3C;
+  --accent-pink: #D94689;
+}
+
+/* --- RESET CSS VÀ FONT CHỮ --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+/* ... các import font cũ ... */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: hidden; /* Ẩn thanh cuộn vì trang chỉ có 1 màn hình */
+}
+
+* {
+  box-sizing: border-box;
+}

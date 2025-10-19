@@ -1,0 +1,157 @@
+.quizContainer {
+    background-color: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.questionText {
+    font-size: 1.5rem;
+    color: var(--accent-pink);
+    margin-bottom: 2rem;
+}
+
+.answerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Tạo layout 2x2 cho 4 câu trả lời */
+    gap: 1rem;
+}
+
+.answerButton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-bg-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.answerButton:hover:not(:disabled) {
+    background-color: var(--secondary-bg-color);
+    border-color: var(--accent-pink);
+}
+
+/* --- CSS cho kết quả --- */
+.answerButton.correct {
+    background-color: hotpink; /* Màu xanh lá */
+    color: white;
+    border-color: #2ecc71;
+}
+
+.answerButton.incorrect {
+    background-color: #f1f1f1;
+    opacity: 0.7;
+}
+
+.feedback {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* ... Các style cũ giữ nguyên ... */
+
+.questionHeader {
+    margin-bottom: 2rem;
+}
+
+.questionCount {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.questionText {
+    font-size: 1.5rem;
+    color: var(--accent-pink);
+    margin: 0; /* Bỏ margin cũ */
+}
+
+/* Class cho hiệu ứng mờ đi khi chuyển câu hỏi */
+.quizContainer {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: scale(0.98);
+}
+
+/* Style cho màn hình kết quả */
+.resultsContainer {
+    text-align: center;
+}
+
+.scoreText {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.restartButton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-red);
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.restartButton:hover {
+    transform: scale(1.05);
+}
+
+/* Cập nhật lại màu sắc nút đúng/sai để rõ ràng hơn */
+.answerButton.correct {
+    background-color: #27ae60;
+    color: white;
+    border-color: #27ae60;
+}
+
+.answerButton.incorrect {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+}
+
+/* Thêm style cho các nút không được chọn sau khi đã trả lời */
+.answerButton:disabled:not(.correct) {
+    opacity: 0.6;
+}
+/* ... các style cũ ... */
+
+.invitation {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
+.letterLink {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: var(--accent-red);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.letterLink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}

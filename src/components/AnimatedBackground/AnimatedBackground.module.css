@@ -1,0 +1,54 @@
+.backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Luôn nằm dưới cùng */
+    background-color: var(--secondary-bg-color);
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+    filter: blur(80px); /* Hiệu ứng mờ ảo */
+    animation: move 25s infinite alternate;
+}
+
+.blob1 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent-pink);
+    top: -100px;
+    left: -150px;
+}
+
+.blob2 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-red);
+    bottom: -150px;
+    right: -200px;
+    animation-duration: 30s; /* Chuyển động chậm hơn */
+}
+
+.blob3 {
+    width: 300px;
+    height: 300px;
+    background: #ffc300; /* Thêm một màu vàng nhạt cho đa dạng */
+    bottom: 50px;
+    left: 100px;
+    animation-duration: 20s;
+}
+
+/* Keyframes cho chuyển động nhẹ nhàng */
+@keyframes move {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+    to {
+        transform: translate(100px, 50px) scale(1.2);
+    }
+}

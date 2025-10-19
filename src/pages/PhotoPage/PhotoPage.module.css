@@ -1,0 +1,64 @@
+.pageContainer {
+    padding: 2rem;
+    min-height: 100vh;
+    /* Dùng lại background chuyển động */
+    background-color: var(--secondary-bg-color);
+}
+/* Container chính của cả trang */
+.pageContainer {
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    overflow-y: hidden; /* **Quan trọng**: Ẩn thanh cuộn dọc */
+    overflow-x: hidden; /* Ẩn cuộn ngang của cả trang */
+    background-color: var(--secondary-bg-color);
+    display: flex; /* Dùng flexbox để căn giữa thanh cuộn */
+    align-items: center;
+}
+
+/* "Thanh cuộn phim" chứa các bức ảnh */
+.scrollContainer {
+    display: flex; /* **Quan trọng**: Sắp xếp các PhotoCard theo hàng ngang */
+    overflow-x: auto; /* **Quan trọng**: Cho phép cuộn ngang khi nội dung tràn ra */
+
+    /* Căn lề và khoảng cách */
+    gap: 5vw; /* Tạo khoảng cách giữa các bức ảnh */
+    padding: 0 5vw; /* Đảm bảo ảnh đầu và cuối không dính sát viền */
+    width: 100%;
+
+    /* --- Hiệu ứng Scroll Snapping --- */
+    scroll-snap-type: x mandatory; /* Bật snap theo trục x, bắt buộc phải snap */
+    scroll-behavior: smooth; /* Cuộn mượt mà */
+
+    /* Tùy chỉnh thanh cuộn cho đẹp hơn */
+    scrollbar-width: thin; /* Cho Firefox */
+    scrollbar-color: var(--accent-pink) transparent;
+}
+
+/* Tùy chỉnh thanh cuộn cho trình duyệt Webkit (Chrome, Safari) */
+.scrollContainer::-webkit-scrollbar {
+    height: 6px;
+}
+.scrollContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scrollContainer::-webkit-scrollbar-thumb {
+    background-color: var(--accent-pink);
+    border-radius: 10px;
+}
+.quizLink {
+    position: absolute; /* Đặt nút ở một vị trí cố định trên trang */
+    bottom: 30px;
+    right: 30px;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-red);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+.quizLink:hover {
+    transform: scale(1.05);
+}

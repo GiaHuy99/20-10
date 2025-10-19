@@ -1,0 +1,36 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--secondary-bg-color);
+}
+
+.letterContent {
+    background-color: var(--bg-color);
+    padding: 3rem 4rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    font-family: 'Caveat', cursive; /* <-- Font chữ viết tay */
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #444;
+}
+
+.greeting {
+    font-weight: bold;
+}
+
+.closing {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .letterContent {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+}
