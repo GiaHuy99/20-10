@@ -5,6 +5,8 @@
     min-height: 100vh;
     padding: 2rem;
     background-color: var(--secondary-bg-color);
+    min-height: 100vh; /* Đảm bảo đủ chiều cao để cuộn được nếu cần */
+    overflow-y: auto;  /* Thêm lại overflow-y để cuộn được */
 }
 
 .letterContent {
@@ -18,6 +20,8 @@
     font-size: 1.8rem;
     line-height: 2;
     color: #444;
+    position: relative; /* Quan trọng: Để ảnh thumbnail có thể định vị tuyệt đối bên trong */
+    padding-top: 5rem; /* Tăng padding trên để ảnh không che mất chữ */
 }
 
 .greeting {
@@ -33,4 +37,16 @@
         padding: 2rem;
         font-size: 1.5rem;
     }
+}
+.letterImageThumbnail {
+    position: absolute;
+    top: 1.5rem;   /* Cách lề trên 1.5rem */
+    right: 1.5rem;  /* Cách lề trái 1.5rem */
+    width: 100px;  /* Kích thước ảnh */
+    height: 100px;
+    object-fit: cover; /* Đảm bảo ảnh hiển thị đẹp */
+    border-radius: 8px; /* Bo tròn góc nhẹ */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border: 3px solid white; /* Khung trắng bao quanh */
+    transform: rotate(-5deg); /* Nghiêng nhẹ cho tự nhiên */
 }

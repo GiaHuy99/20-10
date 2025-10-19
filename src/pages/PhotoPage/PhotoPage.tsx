@@ -4,7 +4,6 @@ import PhotoCard from '../../components/PhotoCard/PhotoCard';
 import idolPhoto1 from '../../assets/Screenshot 2025-10-19 at 17.18.29.png';
 import idolPhoto2 from '../../assets/Screenshot 2025-10-19 at 17.17.00.png';
 import TransitionLink from "../../components/TransitionLink/TransitionLink.tsx";
-import { BiRightArrowAlt } from 'react-icons/bi'; // <-- THÊM DÒNG NÀY
 const PhotoPage = () => {
 
     return (

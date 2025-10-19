@@ -16,7 +16,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  overflow: hidden; /* Ẩn thanh cuộn vì trang chỉ có 1 màn hình */
+  /*overflow: hidden; !* Ẩn thanh cuộn vì trang chỉ có 1 màn hình *!*/
 }
 
 * {

@@ -1,9 +1,15 @@
 import styles from './LetterPage.module.css';
 
+// Import bức ảnh nhỏ cho lá thư
+import letterThumbnail from '../../assets/476484848_122217317792129852_1096564734549781805_n.jpg'; // <-- THÊM DÒNG NÀY
+
 const LetterPage = () => {
     return (
         <main className={styles.pageContainer}>
             <div className={styles.letterContent}>
+                {/* --- THÊM KHUNG HÌNH ẢNH NÀY VÀO ĐÂY --- */}
+                <img src={letterThumbnail} alt="Thumbnail" className={styles.letterImageThumbnail} />
+
                 <p className={styles.greeting}>Gửi nhiếp ảnh gia đặc biệt,</p>
                 <p>
                     Nếu bạn đang đọc được những dòng này, điều đó có nghĩa là bạn không chỉ là một người cầm máy ảnh, mà còn là một người thật sự thấu hiểu. Cảm ơn bạn vì đã dành thời gian, không chỉ để chụp những bức ảnh, mà còn để nhìn thấy những câu chuyện đằng sau chúng.

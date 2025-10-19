@@ -8,6 +8,8 @@
     padding: 2rem;
     position: relative;
     z-index: 1; /* Nằm trên background */
+    height: 100vh;      /* Cố định chiều cao bằng màn hình */
+    overflow: hidden;
 }
 
 .mainHeading {
