@@ -18,33 +18,33 @@ const PhotoPage = () => {
             <div className={styles.scrollContainer}>
                 <PhotoCard
                     imageUrl={idolPhoto1}
-                    title="Khoảnh khắc 01"
-                    description="Nụ cười này không chỉ làm bừng sáng cả khung hình, mà còn mang lại năng lượng tích cực cho bất kỳ ai nhìn thấy..."
+                    title="Khoảnh khắc khiến Fan dừng lại"
+                    description="Báo cáo: Có một nụ cười đang làm out nét cả ly nước xinh đẹp bên cạnh và cả tâm trí của người xem."
                 />
                 <PhotoCard
                     imageUrl={idolPhoto2}
-                    title="Khoảnh khắc 02"
-                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                    title="Chủ thể chính"
+                    description="Người ta nói trong ảnh phải có chủ thể chính và phụ. Xin lỗi chứ trong khung hình này, mọi sự chú ý đều đã va vào chủ thể chính mất rồi."
                 />
                 <PhotoCard
                     imageUrl={idolPhoto3}
-                    title="Khoảnh khắc 02"
-                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                    title="Con mắt của người nghệ sĩ"
+                    description="Với cùng một khung cảnh, nhưng qua lăng kính của chị, nó lại mang một cảm xúc rất khác. chị không chỉ thấy ánh đèn, mà còn thấy được sự ấm áp. Chị không chỉ thấy dòng xe, mà còn thấy được dòng chảy của cuộc sống. Đây chính là sự khác biệt giữa một người chụp ảnh và một nghệ sĩ."
                 />
                 <PhotoCard
                     imageUrl={idolPhoto4}
-                    title="Khoảnh khắc 02"
-                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                    title="Khi khu kẹt xe trở thành hình ảnh nghệ thuật"
+                    description="Em chỉ thấy kẹt xe. Nhưng qua lăng kính của chị, con đường ấy lại trở thành một bức tranh chuyển động đầy màu sắc và cảm xúc."
                 />
                 <PhotoCard
                     imageUrl={idolPhoto5}
-                    title="Khoảnh khắc 02"
-                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                    title="Người lưu giữ những câu chuyện"
+                    description="Em cá là mọi người chỉ nhìn lướt. Chị đã chụp lại hàng trăm lời nguyện ước, hàng trăm câu chuyện thầm lặng được gửi gắm vào gió. Một nhiếp ảnh gia tài năng không chỉ ghi lại hình ảnh, mà còn biết cách lưu giữ cả những cảm xúc vô hình."
                 />
                 <PhotoCard
                     imageUrl={idolPhoto6}
-                    title="Khoảnh khắc 02"
-                    description="Ánh mắt trong bức ảnh này thể hiện sự tập trung và đam mê. Một góc nhìn khác, sâu lắng và đầy cuốn hút..."
+                    title="Nét đấy"
+                    description="Ai đây ta, Giống racing girl, báo báo vậy ta đúng là đa tài"
                 />
 
 
