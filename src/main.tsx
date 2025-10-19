@@ -9,11 +9,13 @@ import {AudioProvider} from "./context/AudioProvider.tsx";
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <BrowserRouter>
+            <AudioProvider>
             <TransitionProvider>
-                <AudioProvider>
+
                 <App />
-                </AudioProvider>
+
             </TransitionProvider>
+            </AudioProvider>
         </BrowserRouter>
     </React.StrictMode>,
 )

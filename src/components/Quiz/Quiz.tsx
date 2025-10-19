@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './Quiz.module.css';
 import TransitionLink from "../TransitionLink/TransitionLink.tsx";
+import { IoMailOutline } from "react-icons/io5"; // <-- THÊM DÒNG NÀY
 // Kiểu dữ liệu cho một câu hỏi
 type Question = {
     questionText: string;
@@ -72,7 +73,10 @@ const Quiz = ({ questions }: QuizProps) => {
                 <p className={styles.invitation}>Có một lá thư đang đợi bạn...</p>
                 {/* Nút mới dẫn đến trang thư */}
                 <TransitionLink to="/letter" className={styles.letterLink}>
-                    Mở thư
+                    {/* Thêm icon vào đây */}
+                    <IoMailOutline className={styles.letterIcon} />
+                    {/* Bọc chữ trong span để dễ dàng căn chỉnh */}
+                    <span>Mở thư</span>
                 </TransitionLink>
             </div>
         );

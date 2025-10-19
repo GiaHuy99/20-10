@@ -5,7 +5,8 @@ export const AudioProvider = ({ children }: { children: ReactNode }) => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     const togglePlay = useCallback(() => {
-        setIsPlaying(prev => !prev);
+        // Dùng callback form để đảm bảo state luôn mới nhất
+        setIsPlaying(prevIsPlaying => !prevIsPlaying);
     }, []);
 
     return (

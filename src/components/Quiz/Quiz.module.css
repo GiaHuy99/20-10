@@ -155,3 +155,40 @@
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+.letterLink {
+    /* Mới: Dùng flexbox để căn chỉnh */
+    display: inline-flex; /* Dùng inline-flex để nút không chiếm toàn bộ chiều rộng */
+    align-items: center;  /* Căn icon và chữ thẳng hàng theo chiều dọc */
+    justify-content: center;
+    gap: 0.5rem; /* Tạo khoảng cách 8px giữa icon và chữ */
+
+    /* Các style cũ giữ nguyên */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem; /* Giảm padding ngang một chút để trông cân đối hơn */
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: var(--accent-red);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.letterLink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* --- THÊM KHỐI STYLE MỚI CHO ICON --- */
+.letterIcon {
+    font-size: 1.3em; /* Kích thước icon lớn hơn chữ một chút */
+    color: black; /* **Quan trọng**: Dùng màu hồng đã định nghĩa */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng xoay nhẹ */
+}
+
+/* Hiệu ứng vui nhộn khi di chuột vào nút */
+.letterLink:hover .letterIcon {
+    transform: rotate(-10deg) scale(1.1);
+}
