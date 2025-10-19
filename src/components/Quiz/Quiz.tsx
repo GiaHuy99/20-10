@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import styles from './Quiz.module.css';
-import {Link} from "react-router-dom";
-
+import TransitionLink from "../TransitionLink/TransitionLink.tsx";
 // Kiểu dữ liệu cho một câu hỏi
 type Question = {
     questionText: string;
@@ -59,12 +58,6 @@ const Quiz = ({ questions }: QuizProps) => {
         }, 1500); // Đợi 1.5s sau khi người dùng chọn đáp án
     };
 
-    const handleRestart = () => {
-        setCurrentQuestionIndex(0);
-        setScore(0);
-        setSelectedOption(null);
-        setShowResult(false);
-    }
 
     // --- RENDER LOGIC ---
 
@@ -78,9 +71,9 @@ const Quiz = ({ questions }: QuizProps) => {
                 </p>
                 <p className={styles.invitation}>Có một lá thư đang đợi bạn...</p>
                 {/* Nút mới dẫn đến trang thư */}
-                <Link to="/letter" className={styles.letterLink}>
+                <TransitionLink to="/letter" className={styles.letterLink}>
                     Mở thư
-                </Link>
+                </TransitionLink>
             </div>
         );
     }

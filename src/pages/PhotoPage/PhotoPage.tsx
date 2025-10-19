@@ -3,7 +3,7 @@ import PhotoCard from '../../components/PhotoCard/PhotoCard';
 // Import ảnh bạn đã thêm vào assets
 import idolPhoto1 from '../../assets/Screenshot 2025-10-19 at 17.18.29.png';
 import idolPhoto2 from '../../assets/Screenshot 2025-10-19 at 17.17.00.png';
-import {Link} from "react-router-dom";
+import TransitionLink from "../../components/TransitionLink/TransitionLink.tsx";
 
 const PhotoPage = () => {
     return (
@@ -22,9 +22,9 @@ const PhotoPage = () => {
                 />
                 {/* Bạn có thể thêm nhiều PhotoCard hơn nữa vào đây */}
             </div>
-            <Link to="/quiz" className={styles.quizLink}>
-                Thử thách kiến thức?
-            </Link>
+            <TransitionLink to="/quiz" className={styles.quizLink}>
+            Thử thách kiến thức?
+        </TransitionLink>
         </main>
     );
 };
