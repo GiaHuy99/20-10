@@ -5,30 +5,27 @@ const QuizPage = () => {
     // Dữ liệu câu hỏi - bạn có thể thay đổi tùy ý
     const quizQuestions = [
         {
-            questionText: 'Món ăn vặt mà "Idol" thích nhất là gì?',
+            questionText: 'Trong lớp học, "vị trí" nào sau đây mô tả chính xác nhất về chị Tuyết Anh? :))',
             answerOptions: [
-                { answerText: 'Trà sữa trân châu', isCorrect: false },
-                { answerText: 'Bánh tráng trộn', isCorrect: true },
-                { answerText: 'Xoài lắc', isCorrect: false },
-                { answerText: 'Phô mai que', isCorrect: false },
+                { answerText: 'A.Học sinh gương mẫu bàn đầu, luôn được thầy cô tuyên dương.', isCorrect: false },
+                { answerText: 'B.Thánh ngủ bàn cuối, xem lớp học như chiếc giường êm ái.', isCorrect: false },
+                { answerText: 'C.Top 7 những gương mặt vàng trong làng quậy', isCorrect: true },
             ],
         },
         {
-            questionText: 'Idol hát như thế nào?',
+            questionText: 'Giọng hát của chị Tuyết Anh được ví như thế nào?',
             answerOptions: [
-                { answerText: 'Hay', isCorrect: false },
-                { answerText: 'Dở', isCorrect: false },
-                { answerText: 'Rống', isCorrect: false },
-                { answerText: 'Rống nhưng độc quyền', isCorrect: true },
+                { answerText: 'A.Trong trẻo như chim họa mi, có khả năng chữa lành mọi vết thương.', isCorrect: false },
+                { answerText: 'B.Trầm ấm như một ly cà phê sữa, nghe là nghiện.', isCorrect: false },
+                { answerText: 'C.Rống như tiếng sư tử gầm, độc quyền không thể sao chép.', isCorrect: true },
             ],
         },
         {
-            questionText: 'Màu sắc yêu thích của "Idol" là gì?',
+            questionText: 'Môn võ nào đã góp phần tạo nên một Tuyết Anh vừa dịu dàng vừa mạnh mẽ?',
             answerOptions: [
-                { answerText: 'Đen & Hồng', isCorrect: true },
-                { answerText: 'Xanh & Vàng', isCorrect: false },
-                { answerText: 'Tím mộng mơ', isCorrect: false },
-                { answerText: 'Cam năng động', isCorrect: false },
+                { answerText: 'A.Vovinam - Tinh hoa võ Việt.', isCorrect: true },
+                { answerText: 'B.Karate - Quyền đạo Nhật Bản.', isCorrect: false },
+                { answerText: 'C.Taekwondo - Với chiếc đai đen đầy quyền lực.', isCorrect: true },
             ],
         }
     ];

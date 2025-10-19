@@ -44,13 +44,13 @@ const PhotoPage = () => {
                 <PhotoCard
                     imageUrl={idolPhoto6}
                     title="Nét đấy"
-                    description="Ai đây ta, Giống racing girl, báo báo vậy ta đúng là đa tài"
+                    description="Ai đây ta, giống racing girl, nhìn báo báo vậy ta đúng là đa tài"
                 />
 
 
                 {/* Bạn có thể thêm nhiều PhotoCard hơn nữa vào đây */}
                 <TransitionLink to="/quiz" className={styles.quizArrowBanner}>
-                    <span>Thử thách kiến thức?</span>
+                    <span>Khám phá sự đa tài của Idol</span>
                 </TransitionLink>
             </div>
 
