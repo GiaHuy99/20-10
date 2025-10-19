@@ -4,11 +4,15 @@ import HomePage from './pages/HomePage/HomePage';
 import PhotoPage from './pages/PhotoPage/PhotoPage';
 import QuizPage from "./pages/QuizPage/QuizPage.tsx";
 import LetterPage from "./pages/LetterPage/LetterPage.tsx";
-import TransitionLayout from "./layouts/TransitionLayout.tsx"; // <-- Import trang mới
+import TransitionLayout from "./layouts/TransitionLayout.tsx";
+import MusicToggleButton from "./components/MusicToggleButton/MusicToggleButton.tsx";
+import BackgroundMusic from "./components/BackgroundMusic/BackgroundMusic.tsx"; // <-- Import trang mới
 
 function App() {
     return (
         <>
+            <BackgroundMusic />
+            <MusicToggleButton />
             <AnimatedBackground />
             <Routes>
                 {/* Tất cả các trang giờ sẽ nằm trong TransitionLayout */}
