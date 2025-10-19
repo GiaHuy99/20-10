@@ -23,7 +23,7 @@ const QuizPage = () => {
         {
             questionText: 'Môn võ nào đã góp phần tạo nên một Tuyết Anh vừa dịu dàng vừa mạnh mẽ?',
             answerOptions: [
-                { answerText: 'A.Vovinam - Tinh hoa võ Việt.', isCorrect: true },
+                { answerText: 'A.Vovinam - Tinh hoa võ Việt.', isCorrect: false },
                 { answerText: 'B.Karate - Quyền đạo Nhật Bản.', isCorrect: false },
                 { answerText: 'C.Taekwondo - Với chiếc đai đen đầy quyền lực.', isCorrect: true },
             ],
